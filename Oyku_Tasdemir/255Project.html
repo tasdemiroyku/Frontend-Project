@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>255 Project</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="255Project.css">
+    <script src="./255Project.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <div class="modal">
+        <div class="modalTry">
+            <div class="modalHeader">
+                <p>New List Name</p>
+            </div>
+            <div class="modalContent">
+                <input type="text" id="listInput">
+            </div>
+            <div class="modalFooter">
+                <button id="createBtn" class="modalButtons">Create</button>
+                <button id="closeBtn" class="modalButtons">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="left">
+            <div class="displayedMember">
+                <img src="./images/oyku.jpeg">
+                <div class="displayedMemberInfo">
+                    <h3>Öykü Taşdemir</h3>
+                    <p>oyku.tasdemir@ug.bilkent.edu.tr</p>
+                </div>
+            </div>
+
+            <div class="projectMembersTitle selector">
+                <i class="fa-regular fa-star"></i>
+                <p>Project Members</p>
+            </div>
+
+            <div id="lists">
+                <ul class="lists">
+
+                </ul>
+            </div>
+
+            <div class="newList">
+                <i class="fa-sharp fa-solid fa-plus"></i>
+                <p>New List</p>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="landingPage">
+                <div class="header">
+                    <i class="fa-regular fa-star"></i>
+                    <h1>Project Members</h1>
+                </div>
+
+                <div class="members">
+                    <div>
+                        <img src="./images/oyku.jpeg" alt="" class="memberImages">
+                        <div class="memberInfo">
+                            <h3>Öykü Taşdemir</h3>
+                            <h4>Section: 01</h4>
+                            <h4>22202294</h4>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="taskPage">
+                
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

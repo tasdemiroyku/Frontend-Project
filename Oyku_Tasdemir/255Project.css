@@ -1,0 +1,382 @@
+* { 
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+.main {
+    /* border:1px solid black ; */
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.displayedMember {
+    /* border: 1px solid purple; */
+    display: flex;
+    height: 10vh;
+    width: 100%;
+}
+
+.displayedMember img {
+    margin-left: 25px;
+    flex: 1;
+    border-radius: 100%;
+    border: 1px solid rgb(171, 171, 171);
+    height: 70px;
+}
+
+.displayedMemberInfo {
+    margin-left: 25px;
+    flex: 6;
+}
+
+.displayedMemberInfo h3 {
+    margin-top: 10px;
+}
+
+.displayedMemberInfo p {
+    margin-top: 10px;
+    color: gray;
+}
+
+.projectMembersTitle {
+    margin-top: 15px;
+    padding: 15px 0;
+    display: flex;
+    width: 100%;
+    border-bottom: 2px solid rgb(200, 200, 200);
+}
+
+.selector {
+    border-left: 5px solid blue;
+}
+
+.projectMembersTitle:hover {
+    cursor: pointer;
+}
+
+.projectMembersTitle i {
+    padding-left: 30px;
+    flex: 1;
+    font-size: 20px;
+    color: rgb(151, 149, 149);
+}
+
+.projectMembersTitle p {
+    flex: 9;
+    font-size: 18px;
+    color: rgb(86, 86, 86);
+}
+
+.lists {
+    /* border: 1px solid yellow; */
+    height: calc(83vh - 60px);
+    width: 100%;
+}
+
+.newList {
+    /* border: 1px solid green; */
+    border-top: 2px solid rgb(200, 200, 200);
+    background-color: #f4f3f3;
+    display: flex;
+    height: 7vh;
+    width: 100%;
+    align-items: center;
+}
+
+.newList:hover {
+    cursor: pointer;
+}
+
+.newList i {
+    margin-left: 20px;
+    flex: 1;
+    font-size: 23px;
+    color: rgb(107, 106, 106);
+}
+
+.newList p {
+    flex: 8;
+    font-size: 16px;
+    color: gray;
+}
+
+.right {
+    /* border:1px solid purple ; */
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    background-color: rgb(251, 217, 223);
+}
+
+.landingPage {
+    /* border:1px solid blue ; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    /* display: none; */
+}
+
+.header {
+    /* border: 1px solid green; */
+    display: flex;
+    color: rgb(222, 55, 122);
+    width: 100%;
+    height: 30vh;
+    align-items: center;
+}
+
+.header i {
+    margin-left: 50px;
+    font-size: 40px;
+    flex-basis: 80px;
+}
+
+.header h1 {
+    font-size: 40px;
+    margin-left: 0;
+    flex: 1;
+}
+
+.members {
+    /* border: 1px solid yellow; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    margin-top: 70px;
+    gap: 40px;
+}
+
+.members div{
+    display: flex;
+    margin-left: 80px;
+}
+
+.memberImages {
+    border-radius: 100%;
+    border: 1px solid rgb(171, 171, 171);
+    width: 75px;
+}
+
+.memberInfo {
+    flex-direction: column;
+    gap: 5px;
+}
+
+.memberInfo h4 {
+    font-weight: normal;
+    margin-left: 0;
+    color: rgb(80, 80, 80);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modalTry {
+    position: fixed;
+    left: calc(50vw - 200px);
+    bottom: calc(50vh - 75px);
+    width: 400px;
+    height: 250px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 15px 10px 15px 5px rgba(0, 0, 0, 0.4);
+}
+
+.modalHeader {
+    background-color: rgb(188, 187, 187);
+    border-radius: 15px 15px 0 0;
+    color: rgb(71, 71, 71);
+}
+
+.modalHeader p {
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+}
+
+.modalContent {
+    justify-items: center;
+    padding-left: 38px;
+    padding-top: 40px;
+}
+
+.modalContent input {
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: 0;
+}
+
+.modalFooter {
+    display: flex;
+}
+
+.modalButtons {
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+#lists {
+    margin-left: 0;
+    width: 100%;
+}
+
+.lists {
+    padding-left: 0;
+    padding-top: 5px;
+    list-style: none;
+    width: 100%;
+}
+
+.listItem {
+    padding: 10px;
+    display: flex;
+}
+
+.listItem:hover {
+    cursor: pointer;
+}
+
+.listItem:hover #trashcan{
+    display: block;
+}
+
+#menuicon {
+    padding-left: 20px;
+    flex-basis: 30px;
+    font-size: 20px;
+    color: palevioletred;
+}
+
+#listName {
+    flex: 2;
+    padding-left: 5px;
+    text-align: left;
+    flex-basis: 280px;
+}
+
+#trashcan {
+    /* flex: 1; */
+    margin-left: 0;
+    /* padding-left: 70px; */
+    font-size: 20px;
+    color: rgb(181, 181, 181);
+    display: none;
+    flex-basis: 20px;
+}
+
+#trashcan:hover {
+    color: gray;
+}
+
+.listTaskCount {
+    /* border: 1px solid black; */
+    visibility: visible;
+    border-radius: 100%;
+    background-color: rgb(206, 205, 205);
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+    color: rgb(99, 99, 99);
+    margin-left: 10px;
+    /* margin-right: 20px; */
+}
+
+.listTaskCountEmpty {
+    /* border: 1px solid black; */
+    visibility: hidden;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+    margin-left: 10px;
+    /* margin-right: 20px; */
+}
+
+.taskPage {
+    display: none;
+    /* border:1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(85, 134, 119);
+}
+
+.taskInfo {
+    /* height: calc(100vh - 75px); */
+    width: 100%;
+}
+
+.taskInfo h1 {
+    color: white;
+    padding: 60px;
+}
+
+.tasks{
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: calc(68vh);
+}
+
+.taskItem {
+    border-radius: 5px;
+    width: 90%;
+    padding: 15px;
+    background-color: white;
+}
+
+.taskItem:hover {
+    cursor: pointer;
+}
+
+.addTask {
+    border-radius: 5px;
+    width: 90%;
+    padding: 15px;
+    background-color: white;
+}
+
+.addTask:hover {
+    cursor: pointer;
+}
+
+.addTask i {
+    color: rgb(68, 68, 68);
+    font-size: 25px;
+}
+
+#addTaskInput {
+    font-size: 20px;
+    border-style: none;
+    outline: none;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+}
+
